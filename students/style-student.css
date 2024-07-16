@@ -1,0 +1,83 @@
+:root {
+    --primary-color: white;
+    --secondary-color: #1e1e2a;
+    --terciary-color: #3ecfd4ba;
+    --gray: rgba(128, 128, 128, 0.801);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu {
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 100vh;
+    gap: 20px;
+    box-shadow: 0 0 20px var(--gray);
+    padding: 20px;
+}
+
+.li-menu {
+    padding: 10px;
+    list-style: none;
+}
+
+.li-menu a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.li-menu:hover {
+    background-color: var(--terciary-color);
+    cursor: pointer;
+    text-align: center;
+}
+
+.selected {
+    background-color: var(--terciary-color);
+}
+
+.main-div {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 200px;
+}
+
+.main-div img {
+    border-radius: 50%;
+}
+
+.div-student {
+    border: 2px solid var(--terciary-color);
+    box-shadow: 0 0 10px var(--gray);
+    padding: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-student:hover {
+    transform: scale(1.1);
+    border: 2px solid var(--primary-color);
+}
+
+.info-student {
+    color: var(--primary-color);
+    padding: 15px;
+    text-align: center;
+}

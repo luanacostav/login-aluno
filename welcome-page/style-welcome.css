@@ -1,0 +1,51 @@
+.title-welcome {
+    font-size: 15px;
+    color: var(--terciary-color);
+}
+
+.container-welcome {
+    width: 40%;
+    height: 600px;
+    background: linear-gradient(45deg, var(--secondary-color), #120c32af);
+    background-size: cover;
+}
+
+.container-welcome img {
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.menu {
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 200px;
+    height: 100vh;
+    gap: 20px;
+    box-shadow: 0 0 20px var(--gray);
+    padding: 20px;
+}
+
+.li-menu {
+    padding: 10px;
+    list-style: none;
+}
+
+.li-menu a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.li-menu:hover {
+    background-color: var(--terciary-color);
+    cursor: pointer;
+    text-align: center;
+}
+
+.selected {
+    background-color: var(--terciary-color);
+}
